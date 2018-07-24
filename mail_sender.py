@@ -26,9 +26,9 @@ def index():
 def process():
     email = request.form['email']
     name = request.form['name']
-    # user_message = request.form['message']
+    user_message = request.form['message']
 
-    msg = Message("wiadomość z formularza", sender="barbaramalek82@gmail.com", recipients=["geisha82@tlen.pl"])
+    msg = Message("wiadomość z formularza", sender="mail@gmail.com", recipients=["recipient@gmail.com"])
     msg.body = "od {}, ({}) , wiadomość:--->  " .format(name, email)
     mail.send(msg)
     return json.dumps({"success" : "Your message was sent successfully!"})
