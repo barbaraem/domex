@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="static/assets/ico/favicon.ico">
+
+    <title>Domex: Default</title>
+
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="static/assets/plugins/ionicons/css/ionicons.min.css">
+
+    <!-- CSS Global -->
+    <!--build:css assets/css/theme.css-->
+    <link rel="stylesheet" href="static/assets/css/theme.css">
+    <!--endbuild-->
+
+  </head>
+  <body data-spy="scroll" data-target="#navbar_main" data-offset="80">
+
+    <!-- PRELOADER
+    ================================================== -->
+    <div class="preloader">
+      <img src="static/assets/img/spinner.svg" alt="Loading..." class="preloader__spinner">
+    </div>
+
+    <!-- MODAL
+    ================================================== -->
+    <div class="modal fade" id="modal_portfolio" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio__heading">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="modal_portfolio__heading"></h4>
+          </div>
+          <div class="modal-body">
+            <img id="modal_portfolio__img" class="img-responsive" src="static/assets/img/1.jpg" alt="...">
+            <p id="modal_portfolio__content"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <div class="container">
+    
+        <!-- Brand name -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_main" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="layouts.html">Domex , tel 601 001 111</a>
+          <!-- <a class="navbar-brand">Domex, tel:601 001 101</a> -->
+        </div>
+    
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbar_main">
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="#section_banner">Witamy</a>
+            </li>
+            <li><a href="#section_features">O nas</a></li>
+            <li><a href="#section_portfolio">Produkty</a></li>
+            <li><a href="#section_about">Sklepy</a></li>
+            <li><a href="#section_testimonials">Opinie</a></li>
+            <li><a href="#section_news">Wiadomości</a></li>
+            <li><a href="#section_contact">Kontakt</a></li>
+          </ul>
+    
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <!-- BANNER
+    ================================================== -->
+    <section class="section_banner" id="section_banner">
+
+      <!-- Images -->
+      <div class="banner__carousel__img" 
+           data-images="static/assets/img/1.jpg, static/assets/img/2.jpg, static/assets/img/3.jpg">
+      </div>
+
+      <!-- Carousel -->
+      <div id="banner__carousel" class="banner__carousel carousel" data-ride="carousel">
+
+        <!-- Slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+            
+                  <h1 class="h0 page-header text-white text-center animate-down animate-xs-step-0">
+                    Welcome to <span>Domex</span>
+                  </h1>
+                  <p class="page-subheader text-white-muted text-center animate-down animate-xs-step-1">
+                    tu można napisać dwa zdania o firmie(zdjęcie do podmiany)
+                  </p>
+                  <div class="text-center">
+                    <a href="#section_features" class="btn btn-primary animate-down animate-xs-step-2">
+                      Dowiedz się więcej!
+                    </a>
+                  </div>
+            
+                </div>
+              </div> <!-- / .row -->
+            </div> <!-- / .container -->
+
+          </div>
+          <div class="item">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+            
+                  <h1 class="h0 page-header text-white text-center animate-down animate-xs-step-0">
+                    Promki promki <span>promki</span>
+                  </h1>
+                  <p class="page-subheader text-white-muted text-center animate-down animate-xs-step-1">
+                    to może być slajd z aktualnymi promocjami lub produktami(zdjęcie do podmiany)
+                  </p>
+                  <div class="text-center">
+                    <a href="#section_features" class="btn btn-primary animate-down animate-xs-step-2">
+                      Dowiedz się więcej!
+                    </a>
+                  </div>
+            
+                </div>
+              </div> <!-- / .row -->
+            </div> <!-- / .container -->
+            
+          </div>
+          <div class="item">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+            
+                  <h1 class="h0 page-header text-white text-center animate-down animate-xs-step-0">
+                    Zobacz nasze <span>nowości!</span>
+                  </h1>
+                  <p class="page-subheader text-white-muted text-center animate-down animate-xs-step-1">
+                    np.slajd z produktami, tych sladów może być więcej niż trzy (w zależności od potrzeb)
+                  </p>
+                  <div class="text-center">
+                    <a href="#section_features" class="btn btn-primary animate-down animate-xs-step-2">
+                      kliknij!
+                    </a>
+                  </div>
+            
+                </div>
+              </div> <!-- / .row -->
+            </div> <!-- / .container -->
+            
+          </div>
+        </div>
+      
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#banner__carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#banner__carousel" data-slide-to="1"></li>
+          <li data-target="#banner__carousel" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Controls -->
+        <a class="left carousel-control" href="#banner__carousel" role="button" data-slide="prev">
+          <span class="ion-android-arrow-back" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#banner__carousel" role="button" data-slide="next">
+          <span class="ion-android-arrow-forward" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      
+      </div> <!-- / .carousel -->
+
+    </section>
+
+    <!-- FEATURES
+    ================================================== -->
+    <section class="section_features" id="section_features">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+    
+            <h2 class="page-header text-center">
+              Oferta <span>Domex</span>
+            </h2>
+
+            <p class="page-subheader text-center">
+              Kilka zdań o firmie, co sprzedaje? gdzie? , czym sie zajmuje itp..... 
+            </p>
+    
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-4">
+            
+            <div class="features__item animate-sm-step-0" data-animate="animate-up">
+              <!-- <div class="features__item__icon">
+                <i class="ion-android-laptop"></i>
+
+              </div> -->
+              <div class="team__item__img">
+                <img src="static/assets/img/kosiarka.jpg" class="img-responsive" alt="...">
+              </div>
+              <h3 class="features__item__heading">
+                Sprzęt ogrodniczy
+              </h3>
+              <div class="features__item__body">
+                Kosiarki spalinowe, elektryczne, samojezdne, kosy, podcinarki, glebogryzarki, odśnieżarki i wiele innych w najlepszych cenach! Jesteśmy autoryzowanym dystrybutorem produktów firmy <a target="blank" href="https://www.stiga.pl/">STIGA</a> <a target="blank" href="https://www.victus.pl/produkty">VICTUS</a>  <a target="blank" href="https://www.hortmasz.pl/eShop/CategoryList.aspx">HORTMASZ</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-4">
+            
+            <div class="features__item animate-sm-step-1" data-animate="animate-up">
+              <!-- <div class="features__item__icon">
+                <i class="ion-android-options"></i>
+              </div> -->
+              <div class="team__item__img">
+                <img src="static/assets/img/zamienne.jpg" class="img-responsive" alt="...">
+              </div>
+              <h3 class="features__item__heading">
+                Części zamienne
+              </h3>
+              <div class="features__item__body">
+                Wysokiej jakości części zamienne do maszyn ogrodniczych wszystkich marek. <strong>Szukasz konkrenej części?
+                <a href="#section_contact">Napisz</a> lub zadzwoń: 600 111 001 </strong>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-4">
+            
+            <div class="features__item animate-sm-step-2" data-animate="animate-up">
+             <!--  <div class="features__item__icon">
+                <i class="ion-android-color-palette"></i>
+              </div> -->
+              <div class="team__item__img">
+                <img src="static/assets/img/tools.jpg" class="img-responsive" alt="...">
+              </div>
+              <h3 class="features__item__heading">
+                Serwis
+              </h3>
+              <div class="features__item__body">
+                Nie pozostawiamy naszych klientów samych sobie. Zapewniamy serwis gwarancyjny wszystkich zakupionych u nas urządzeń ogrodniczych. Masz problem ze sprzętem? <strong> <a href="#section_contact">Napisz</a> lub zadzwoń: 600 111 001 </strong>
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-4">
+            
+            <div class="features__item animate-sm-step-0" data-animate="animate-up">
+              <!-- <div class="features__item__icon">
+                <i class="ion-android-checkmark-circle"></i>
+              </div> -->
+              <div class="team__item__img">
+                <img src="static/assets/img/boiler.jpg" class="img-responsive" alt="...">
+              </div>
+              <h3 class="features__item__heading">
+                Urządzenia grzewcze gazowe
+              </h3>
+              <div class="features__item__body">
+                Przepływowe podgrzewacze wody, kotły kondensacyjne i konwencjonalne, pompy ciepła do przygotowania c.w.u.,gruntowe pompy ciepła, kolektory słoneczne, centrale wentylacyjne z odzyskiem ciepła i inne. Jesteśmy przedstawicielem firmy Junkers, Buderus i Termet. Zapewniamy montaż urzadzeń przez autoryzowanych instalatorów.
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-4">
+            
+            <div class="features__item animate-sm-step-1" data-animate="animate-up">
+             <!--  <div class="features__item__icon">
+                <i class="ion-android-send"></i>
+              </div> -->
+              <div class="team__item__img">
+                <img src="static/assets/img/piec.jpg" class="img-responsive" alt="...">
+              </div>
+              <h3 class="features__item__heading">
+                Kotły C.O
+              </h3>
+              <div class="features__item__body">
+                 Nowoczesne kotły centralnego ogrzewania na paliwa stałe : węglowe, pelet, ekogroszek
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-4">
+            
+            <div class="features__item animate-sm-step-2" data-animate="animate-up">
+              <!-- <div class="features__item__icon">
+                <i class="ion-android-mail"></i>
+              </div> -->
+              <div class="team__item__img">
+                <img src="static/assets/img/moto.jpg" class="img-responsive" alt="...">
+              </div>
+              <h3 class="features__item__heading">
+                Motocykle i skutery
+              </h3>
+              <div class="features__item__body">
+                Sprzedaż oraz serwis skuterów i motocykli polskiej firmy Romet.
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- PORTFOLIO
+    ================================================== -->
+    <section class="section_portfolio" id="section_portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+    
+            <h2 class="page-header text-center sr-only">
+              A picture paints a <span>thousand</span> words
+            </h2>
+    
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="static/assets/img/1.jpg" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    tu mogą być produkty z linkami
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="Lorem ipsum dolor site amet" data-img="static/assets/img/1.jpg" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque maiores quibusdam, soluta nostrum odio dolore ratione numquam nemo accusamus quos, veniam alias fugit, nulla quaerat dicta. Aut nulla rerum natus?">
+                      PODGLĄD
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="static/assets/img/2.jpg" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    kosiarki
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="Lorem ipsum dolor site amet" data-img="static/assets/img/2.jpg" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque maiores quibusdam, soluta nostrum odio dolore ratione numquam nemo accusamus quos, veniam alias fugit, nulla quaerat dicta. Aut nulla rerum natus?">
+                      Zobacz
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="static/assets/img/2.jpg" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    gleboryzarki (wszystkie zdjecia są do podmiany)
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="Lorem ipsum dolor site amet" data-img="static/assets/img/3.jpg" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque maiores quibusdam, soluta nostrum odio dolore ratione numquam nemo accusamus quos, veniam alias fugit, nulla quaerat dicta. Aut nulla rerum natus?">
+                      Zobacz
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="static/assets/img/4.jpg" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    Lorem ipsum dolor site amet
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="Lorem ipsum dolor site amet" data-img="static/assets/img/4.jpg" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque maiores quibusdam, soluta nostrum odio dolore ratione numquam nemo accusamus quos, veniam alias fugit, nulla quaerat dicta. Aut nulla rerum natus?">
+                      Open preview
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="static/assets/img/5.jpg" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    Lorem ipsum dolor site amet
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="Lorem ipsum dolor site amet" data-img="static/assets/img/5.jpg" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque maiores quibusdam, soluta nostrum odio dolore ratione numquam nemo accusamus quos, veniam alias fugit, nulla quaerat dicta. Aut nulla rerum natus?">
+                      Open preview
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            
+            <div class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="static/assets/img/7.jpg" class="img-responsive" alt="...">
+                <div class="portfolio__item__img__mask">
+                  <h3 class="text-center">
+                    Lorem ipsum dolor site amet
+                  </h3>
+                  <div class="text-center">
+                    <a href="#modal_portfolio" class="btn btn-primary" role="button" data-toggle="modal" data-heading="Lorem ipsum dolor site amet" data-img="static/assets/img/7.jpg" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque maiores quibusdam, soluta nostrum odio dolore ratione numquam nemo accusamus quos, veniam alias fugit, nulla quaerat dicta. Aut nulla rerum natus?">
+                      Open preview
+                    </a>
+                  </div>
+                </div> <!-- / .portfolio__item__img__mask -->
+              </div> <!-- / .portfolio__item__img -->
+            </div> <!-- / .portfolio__item -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container-fluid -->
+    </section>
+
+   
+    <!-- TEAM
+    ================================================== -->
+
+    <!-- STATS
+    ================================================== -->
+   
+
+    <!-- SKILLS
+    ================================================== -->
+    
+
+    <!-- ABOUT
+    ================================================== -->
+    <section class="section_about" id="section_about">
+      <div class="container">
+        <div class="row row_centered">
+          <div class="col-sm-6 col-sm-push-6">
+            
+            <h2 class="page-header">
+              Nasze <span>sklepy</span>
+            </h2>
+
+            <p>
+              Domex  ul. Mickiewicza 9 <br>
+              37-600 Lubaczów, woj. podkarpackie <br>
+              nr telefonu:  16 632 01 77 <br>
+              godziny otwarcia: pn-pt 10:00 - 19:00
+            </p>
+            
+
+          </div>
+          <div class="col-sm-6 col-sm-pull-6">
+    
+            <div class="about__img">
+              <img src="static/assets/img/firma2.jpg" class="img-responsive" alt="domex">
+            </div>
+    
+          </div>
+        </div> <!-- / .row -->
+        <div class="row row_centered">
+          <div class="col-sm-6">
+
+            <p>
+              Domex  ul. Unii Lubelskiej 2a <br>
+              37-600 Lubaczów, woj. podkarpackie <br>
+              nr telefonu:  16 000 00 00
+            </p>
+            
+          </div>
+          <div class="col-sm-6">
+    
+            <div class="about__img">
+              <img src="static/assets/img/firma1.jpg" class="img-responsive" alt="domex">
+            </div>
+    
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- TESTIMONIALS
+    ================================================== -->
+    <section class="section_testimonials section_alt" id="section_testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+    
+            <h2 class="page-header text-center">
+              Co <span>Klienci</span> mówią o nas
+            </h2>
+
+            <p class="page-subheader text-center">
+              Można tu wrzucić opinie klientów, lub w ogóle wywalić tę sekcję
+            </p>
+    
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-4">
+            
+            <blockquote class="testimonials__blockquote animate-sm-step-0" data-animate="animate-up">
+              <p>
+                Remontowałem mieszkanie i wymieniałem instalację grzewczą. W sklepie DOMEX kupiłem kocioł kondensacyjny, korzystałem również z montażu. Uważam, że zarówno cena jak i jakość wykonanych prac jest na najwyższym poziomie. Fajne jest to, że można negocjować ceny. Naprawdę wyszedłem nieźle do przodu. Po paru tygodniach zgłosiłem kocioł do regulacji. Bez problemu przyjechał pracownik i zrobił tą drobną poprawkę. Stanowczo polecam - SUPER FIRMA I obsługa na medal!
+
+              </p>
+              <footer>
+                <img src="static/assets/img/avatar_3.png" class="img-responsive" alt="...">
+                <div>
+                  <h3 class="h5">Barak Obama</h3>
+                  <cite>Oleszyce</cite>
+                </div>
+              </footer>
+            </blockquote>
+
+          </div>
+          <div class="col-sm-4">
+            
+            <blockquote class="testimonials__blockquote animate-sm-step-1" data-animate="animate-up">
+              <p>
+                Sklep Domex polecił mi mój znajomy. Jednym słowem-FACHOWCY! Szczerze polecam skorzystanie z ich usług. Sprzedawcy w sklepie doradzili mi bardzo dobry sprzęt, na którym dodatkowo zaoszczędziłem. Okazało się, że ten, który pierwotnie wybrałem był droższy i wcale nie lepszy. Bardzo dziękuję i polecam.
+              </p>
+              <footer>
+                <img src="static/assets/img/avatar_2.png" class="img-responsive" alt="...">
+                <div>
+                  <h3 class="h5">Marek Niedźwiecki</h3>
+                  <cite>Trójka</cite>
+                </div>
+              </footer>
+            </blockquote>
+
+          </div>
+          <div class="col-sm-4">
+            
+            <blockquote class="testimonials__blockquote animate-sm-step-2" data-animate="animate-up">
+              <p>
+                Jestem bardzo pozytywnie zaskoczona jakością obsługi. Teraz większość sklepów ma bardzo dobre podejście do klienta, dlatego nie sądziłam, że może jeszcze mnie coś zdziwić. Ceny są zwykle niższe niż u producenta. Jest dużo sezonowych promocji i przecen. Myślę, że każdy może znaleźć coś dopasowanego do swoich możliwości. Kosiarka, którą kupiłam jest bardzo dobrej jakości. Polecam w 100%.
+              </p>
+              <footer>
+                <img src="static/assets/img/avatar_1.png" class="img-responsive" alt="...">
+                <div>
+                  <h3 class="h5">Krystyna Janda</h3>
+                  <cite>Lubaczów</cite>
+                </div>
+              </footer>
+            </blockquote>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- NEWS
+    ================================================== -->
+    <section class="section_news" id="section_news">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+    
+            <h2 class="page-header text-center">
+              Najnowsze <span>wiadomości</span>
+            </h2>
+
+            <p class="page-subheader text-center">
+              Najnowsze wiadomości i ogłoszenia o naszej firmie.<br> 
+              (tu mogą się zaciągać automatycznie posty z Facebooka)
+            </p>
+    
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-4">
+            
+            <a href="#" class="news__item animate-sm-step-0" data-animate="animate-up">
+              <div class="news__item__img">
+                <img src="static/assets/img/2.jpg" class="img-responsive" alt="...">
+                <time datetime="2017-01-12" class="news__item__img__date">
+                  Jan <span>12</span>
+                </time>
+              </div>
+              <div class="news__item__footer">
+                <h3 class="news__item__footer__heading">
+                  Lorem ipsum dolor sit
+                </h3>
+                <div class="news__item__footer__content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aliquam omnis.
+                </div>
+              </div>
+            </a> <!-- / .news__item -->
+
+          </div>
+          <div class="col-sm-4">
+            
+            <a href="#" class="news__item animate-sm-step-1" data-animate="animate-up">
+              <div class="news__item__img">
+                <img src="static/assets/img/5.jpg" class="img-responsive" alt="...">
+                <time datetime="2017-02-17" class="news__item__img__date">
+                  Feb <span>17</span>
+                </time>
+              </div>
+              <div class="news__item__footer">
+                <h3 class="news__item__footer__heading">
+                  Lorem ipsum dolor sit
+                </h3>
+                <div class="news__item__footer__content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aliquam omnis.
+                </div>
+              </div>
+            </a> <!-- / .news__item -->
+
+          </div>
+          <div class="col-sm-4">
+            
+            <a href="#" class="news__item animate-sm-step-2" data-animate="animate-up">
+              <div class="news__item__img">
+                <img src="static/assets/img/7.jpg" class="img-responsive" alt="...">
+                <time datetime="2017-02-25" class="news__item__img__date">
+                  Feb <span>25</span>
+                </time>
+              </div>
+              <div class="news__item__footer">
+                <h3 class="news__item__footer__heading">
+                  Lorem ipsum dolor sit
+                </h3>
+                <div class="news__item__footer__content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aliquam omnis.
+                </div>
+              </div>
+            </a> <!-- / .news__item -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CONTACT
+    ================================================== -->
+    <section class="section_contact" id="section_contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+    
+            <h2 class="page-header text-center">
+              Napisz do <span>nas</span>
+            </h2>
+
+            <p class="page-subheader text-white-muted text-center">
+              Nie znalazłeś produktu? potrzebujesz wsparcia technicznego lub indywidualnej wyceny? Napisz lub zadzwoń !
+            </p>
+    
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-xs-12">
+            
+            <div class="contact__container">
+              <div class="row">
+                <div class="col-sm-8">
+                  
+                  <!-- Form -->
+                  <form class="contact__container__form" id="form_sendemail" method="post" action="" >
+                    
+                    <!-- Header -->
+                    <div class="form-group">
+                      <h3>Napisz wiadomość</h3>
+                    </div>
+
+                    <!-- Alert message -->
+                    <div class="alert" id="form_message" role="alert"></div>
+                    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label for="email" class="sr-only">Email address *</label>
+                      <input type="email" name="email" class="form-control" id="email" placeholder="Wpisz swój adres e-mail">
+                      <span class="help-block"></span>
+                    </div>
+                    
+                    <!-- Name -->
+                    <div class="form-group">
+                      <label for="name" class="sr-only">Name *</label>
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Wpisz imię i nazwisko">
+                      <span class="help-block"></span>
+                    </div>
+                    
+                    <!-- Message -->
+                    <div class="form-group">
+                      <label for="message" class="sr-only">Message *</label>
+                      <textarea name="message" class="form-control" id="message" placeholder="Twoja wiadomość"></textarea>
+                      <span class="help-block"></span>
+                    </div>
+                    
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn-primary">
+                      Wyślij
+                    </button>
+
+                  </form>
+
+                </div>
+                <div class="col-sm-4">
+                  
+                  <ul class="contact__container__info">
+                    <li>
+                      <h3>Kontakt</h3>
+                    </li>
+                    <li>
+                      <i class="ion-android-pin"></i>
+                      <p>
+                        DOMEX Technika Grzewcza <br>
+                        Ul. Adama Mickiewicza 9<br>
+                        37-600 Lubaczów
+                      </p>
+                    </li>
+                    <li>
+                      <i class="ion-android-call"></i>
+                      <p>
+                        <a href="tel:00000000000">+0 (000) 000-00-00</a>
+                      </p>
+                    </li>
+                    <li>
+                      <i class="ion-android-mail"></i>
+                      <p>
+                        <a href="mailto:admin@domain.com">domex@domain.com</a>
+                      </p>
+                    </li>
+                  </ul>
+
+                </div>
+              </div> <!-- / .row -->
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="section_footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+    
+            <p class="footer__copyright">
+            <a href="https://pl.freepik.com/darmowe-zdjecie-wektory/podroż">Podróż fotografie designed by Bearfotos - Freepik.com</a>
+              <!-- <span id="footer__year">2017</span> &copy; Wolfram theme by <a href="http://simpleqode.com" target="_blank">Simpleqode.com</a> | Purchase via <a href="https://wrapbootstrap.com/theme/wolfram-multipurpose-one-page-template-WB0915821" target="_blank">Wrapbootstrap.com</a> -->
+            </p>
+    
+          </div>
+          <div class="col-sm-3">
+            
+            <ul class="footer__social">
+              <li>
+                <a class="twitter" href="#">
+                  <i class="ion-social-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="facebook" href="#">
+                  <i class="ion-social-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a class="pinterest" href="#">
+                  <i class="ion-social-pinterest"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+
+    <!-- JS Global -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- JS Plugins -->
+    <script src="static/assets/plugins/smoothscroll/smoothscroll.min.js"></script>
+    <script src="static/assets/plugins/backstretch/jquery.backstretch.min.js"></script>
+    <script src="static/assets/plugins/countTo/jquery.countTo.js"></script>
+    <script src="static/assets/plugins/contact-form/contact.js"></script>
+    <script src="static/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+
+    <!-- JS Custom -->
+    <!--build:js assets/js/theme.js -->
+    <script src="static/assets/js/theme.js"></script>
+    <!-- endbuild -->
+    <script src="static/assets/js/custom.js"></script>
+
+  </body>
+</html>
