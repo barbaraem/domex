@@ -1,15 +1,23 @@
 
 from flask import Flask, request, render_template, json
 import re
+import os.path as op
 
+from flask_admin.contrib.fileadmin import FileAdmin
+from flask_admin import Admin
 from flask_mail import Mail, Message
 
 app = Flask(__name__)
 mail = Mail(app)
+# Create administrative view using flask-admin.
+admin = Admin(app,template_mode="bootstrap3")
+
+path = op.join(op.dirname(__file__), 'static')
+admin.add_view(FileAdmin(path, '/static/', name='Static Files'))
 
 app.secret_key = "development key"
 
-# mail server configuration
+# Mail server configuration.
 app.config['MAIL_SERVER'] = "smtp.gmail.com"
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = "sender@email.com"
@@ -21,13 +29,13 @@ mail = Mail(app)
 
 @app.route('/')
 def index():
-    """display the homepage"""
+    """Display the homepage"""
     return render_template('index.html')
 
 
 @app.route('/mail_sender', methods=['POST'])
 def process():
-    """user input data validation and sending an e-mail"""
+    """User input data validation and sending an e-mail"""
 
     email = request.form['email']
     name = request.form['name']
@@ -47,11 +55,11 @@ def process():
     if not user_message:
         return json.dumps({"error": {"message": "Wpisz swoją wiadomość!"}})
 
-    # send an e-mail, if data is valid:
+    # Send an e-mail, if data is valid:
     msg = Message("wiadomość z formularza", sender="sender@email.com", recipients=["wiyerid@poly-swarm.com"])
     msg.body = "od {}, ({}) , wiadomosc:--->{}  ".format(name, email, user_message)
     mail.send(msg)
-    # returning json success message to jquery:
+    # Returning json success message to jquery:
     return json.dumps({"success": "Twoja wiadomość została wysłana!"})
 
 
