@@ -1,1 +1,1 @@
-web: gunicorn nameless-woodland-39079.wsgi --log-file -
+web: gunicorn -w 4 -b "0.0.0.0:$PORT" app:app
