@@ -32,6 +32,7 @@ List of features ready:
 To-do list:
 *  logging in, logging out, for admin view
 *  tests
+*  deployment on AWS
 
 
 ## Status
