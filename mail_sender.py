@@ -1,4 +1,3 @@
-
 from flask import Flask, request, render_template, json
 import re
 import os.path
@@ -10,21 +9,22 @@ from flask_mail import Mail, Message
 app = Flask(__name__)
 mail = Mail(app)
 
+app.config.from_object('config')
+
 # Create administrative view using flask-admin.
-admin = Admin(app,template_mode="bootstrap3")
+admin = Admin(app, template_mode="bootstrap3")
 
 path = os.path.join(os.path.dirname(__file__), 'static')
 admin.add_view(FileAdmin(path, '/static/assets/img/', name='Pliki Statyczne'))
 
-app.secret_key = "development key"
-
+app.config['SECRET_KEY']
 # Mail server configuration.
-app.config['MAIL_SERVER'] = "smtp.gmail.com"
-app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = "sender@email.com"
-app.config['MAIL_PASSWORD'] = "sender_pass"
-app.config['MAIL_USE_TLS'] = False
-app.config['MAIL_USE_SSL'] = True
+app.config['MAIL_SERVER']
+app.config['MAIL_PORT']
+app.config['MAIL_USERNAME']
+app.config['MAIL_PASSWORD']
+app.config['MAIL_USE_TLS']
+app.config['MAIL_USE_SSL']
 mail = Mail(app)
 
 
@@ -57,7 +57,7 @@ def process():
         return json.dumps({"error": {"message": "Wpisz swoją wiadomość!"}})
 
     # Send an e-mail, if data is valid:
-    msg = Message("wiadomość z formularza", sender="sender@email.com", recipients=["wiyerid@poly-swarm.com"])
+    msg = Message("wiadomość z formularza", sender=app.config['MAIL_USERNAME'], recipients=["wiyerid@poly-swarm.com"])
     msg.body = "od {}, ({}) , wiadomosc:--->{}  ".format(name, email, user_message)
     mail.send(msg)
     # Returning json success message to jquery:
